@@ -56,7 +56,7 @@ namespace AccelByte.PluginArch.SessionManager.Demo.Server
             if (appServiceName == null)
                 ServiceName = "extend-app-session-manager";
             else
-                ServiceName = $"extend-app-{appServiceName.Trim().ToLower()}";
+                ServiceName = $"extend-app-sm-{appServiceName.Trim().ToLower()}";
 
             string? appResourceName = Environment.GetEnvironmentVariable("APP_RESOURCE_NAME");
             if (appResourceName == null)

@@ -32,7 +32,7 @@ namespace AccelByte.PluginArch.SessionManager.Demo.Server
             if (appServiceName == null)
                 appServiceName = "extend-app-session-manager";
             else
-                appServiceName = $"extend-app-{appServiceName.Trim().ToLower()}";
+                appServiceName = $"extend-app-sm-{appServiceName.Trim().ToLower()}";
 
             Metrics.DefaultRegistry.SetStaticLabels(new Dictionary<string, string>()
             {
